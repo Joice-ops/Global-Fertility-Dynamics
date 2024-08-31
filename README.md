@@ -6,3 +6,8 @@ This project explores the decline in fertility rates across 20 countries over a 
 
 ### Data Source
 The dataset used in this analysis is sourced from the [World Bank Group](https://databank.worldbank.org/reports.aspx?source=2&series=SP.DYN.TFRT.IN&country=&_gl=1*1a5qzzn*_gcl_au*MTczNDYzNTAzLjE3MjM4MzUwNjM.#), covering 20 countries from 1984 to 2023, with a total of 8,000 entries. The countries are divided into two groups: the 10 countries with the highest fertility rates and the 10 with the lowest.
+
+### Project Structure
+- Data: High Fertility & Low Fertility Country dataset csv
+- Descriptivve Data: Metadata excel file
+- 
