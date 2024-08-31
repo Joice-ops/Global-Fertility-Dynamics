@@ -1,5 +1,5 @@
 # Global Fertility Decline Analysis 
-### Project Overview:
+### Project Overview
 According to the record, The global Total Fertility Rate (TFR) has seen a significant decline, dropping from nearly 5 children per woman 70 years ago to 2.3 children today. This sharp decrease reflects profound changes in global demographic trends, and while it suggests progress in areas like family planning and economic development, it also introduces new uncertainties and challenges. 
 
 This project explores the decline in fertility rates across 20 countries over a 40-year span (1984-2023). The countries are divided into two groups—those with the highest fertility rates and those with the lowest. The analysis aims to uncover the commonalities and differences between these groups and to analyze the relationship between fertility and key factors such as economic sectors, demographics, education, and health system.​
@@ -12,6 +12,8 @@ This project is organized as follows:
 - Dataset: High Fertility & Low Fertility Country dataset csv
 - Descriptive Data: Metadata excel file
 - Interactive Dashboard
+- High Fertility Regression Model
+- Low Fertility Regression Model
 
 ### Key Findings
 **High-Fertility Countries:​**
@@ -30,7 +32,7 @@ This project is organized as follows:
 - Both groups show a decreasing trend in fertility rates over the 40-year period.​
 - Despite the fertility decline, GDP has grown, and spending on health has increased in both groups.
 
-### Model Evaluation:
+### Model Evaluation
 
 - **Polynomial Regression**
 - **LassoCV** (Best model for analyzing highest fertility rates, excluding unemployment feature due to missing data)
@@ -39,11 +41,18 @@ This project is organized as follows:
     - Mean Squared Error (MSE): 0.04
     - Root Mean Squared Error (RMSE): 0.20
     - R-squared: 0.94
-- **RidgeCV** (Best model for analyzing lowest fertility rates combined, considering all 12 features)
+- **RidgeCV** (Best model for analyzing lowest fertility rates, considering all 12 features)
   - **Performance:**
     - Mean Absolute Error (MAE): 0.09
     - Mean Squared Error (MSE): 0.01
     - Root Mean Squared Error (RMSE): 0.12
     - R-squared: 0.88
+
+- **Time Series Analysis**
+  - **Auto-Arima** (Best model for highest fertility rates, p=0, d=1, q=0)
+  - **Auto-Arima** (Best model for lowest fertility rates, p=1, d=0, q=0)
+
+### Conclusion
+The analysis reveals that wealthier countries with stable political environments, higher GDP, and better health expenditure tend to have lower fertility rates. Conversely, countries with higher fertility rates often face significant challenges such as political instability, poverty, and low investment in health systems. The global decline in fertility rates underscores the need to address these disparities and prepare for potential demographic and socioeconomic challenges in the future.
 
 
